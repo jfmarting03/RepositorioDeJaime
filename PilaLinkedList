@@ -1,0 +1,31 @@
+//pila con linked list 
+import java.util.LinkedList;
+import java.util.List;
+
+public class PilaLinkedList {
+
+	public static void main(String[] args) {
+		System.out.println("Pila con linkedList: \n" );
+
+		List<String> pila = new LinkedList<String>(); //Se crea la pila de tipo generico String
+		((LinkedList<String>) pila).push("A"); //Apila o desapila un elemento
+		((LinkedList<String>) pila).push("B");
+		((LinkedList<String>) pila).push("C");
+		((LinkedList<String>) pila).push("D");
+		System.out.println("Push " + pila);
+		
+		
+		((LinkedList<String>) pila).pop();
+		System.out.println("Pop " + pila);
+		
+		//Mostrar la lista otra vez
+		
+		
+		String x =((LinkedList<String>) pila).peek();
+		((LinkedList<String>) pila).peek();
+		System.out.println("Peek " + x);
+		
+		
+	}
+
+}
